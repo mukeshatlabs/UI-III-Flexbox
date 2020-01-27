@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-}
+} */
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -48,7 +48,7 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
+{
     box-sizing: border-box;
 }
 
@@ -61,6 +61,147 @@ h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
+} 
+
+/* Your code starts here! */
+/* style the nvaigation bar START */
+.container{
+	width: 900px;
+	margin: auto;
+}
+header nav{	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 30px;
+}
+header nav a{
+	text-decoration: none;
+}
+/* style the nvaigation bar END */
+
+/* style the first section - "innovation on demand" START */
+.first{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-transform: uppercase;
+	margin: 50px 0px;
+}
+button{
+	margin-left: 160px;
+	margin-top: 10px;
+	width: 120px;
+}
+.title  p{
+	font-size: 80px;
+	font-weight: bolder;
+	text-align: center;
+}
+/* style the first section - "innovation on demand" END */
+
+/* style the second section - "features/acout" START */
+.second{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;	
+	border-top: 1px solid black;
+	margin-bottom: 20px;
+	padding: 10px 0;
+}
+.sectiontitle{
+	font-size: 20px;
+	font-weight: bolder;
+	margin: 20px auto;
+	text-transform: uppercase;
+}
+/* style the second section - "features/acout" END */
+
+.middle-img{
+	margin: 20px auto;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* style the third section - "services/product/vision" START */
+.third{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;	
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+.third p{
+	width: 270px;
+}
+/* style the third section - "services/product/vision" START */
+
+.services-header-img{
+	margin: 20px auto;
+}
+
+.service-title{
+	border-bottom: 1px solid black;
+}
+.service-title p {
+	margin-bottom: 30px;
+}
+.service-title h1{
+	font-size: 30px;
+}
+
+.middle-section{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 20px 0px;
+
+}
+.middle-section .service-box{
+	width: 45%;
+	border: 2px solid black;
+	background-color: #E8E8E8;
+	padding: 10px;
+	margin: 20px 0px;
+}
+
+.middle-section .service-box .section-button{
+    border: 2px solid black;
+    padding: 8px ;
+    margin-top: 10px;
+    width: 110px;
+	border-radius: 8px;
+	background-color: WhiteSmoke;
+}
+.about{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-top: 1px solid black;
+	align-items: flex-start;
+	margin: 10px 0px;
+}
+
+.about .abouttext{
+	width: 45%;
+	padding: 10px;
+	margin: 20px 0px;
+}
+
+.about img{
+	margin: 20px 0px;
+}
+.contact-section {
+	border-top: 1px solid black;
+	padding: 20px 0;
+}
+
+address{
+	line-height: 1;
+}
+
+footer{
+	text-align: center;
+	margin-top: 30px;
+}
